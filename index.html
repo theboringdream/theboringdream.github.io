@@ -7,6 +7,9 @@
 
 body{
 background: #183C55;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #a{
@@ -303,19 +306,18 @@ z-index: 0;
 
 @keyframes getbigger {
                 0% {
-                    left: 0px;
-			opacity:0%;
+                    left: -10%;
+			opacity:100%;
                 }
                 5% {
 			opacity:100%;
                 }
                 
                 59% {
-
+                    left: 100%;
                     opacity:100%;
                 }
                 60% {
-                    left: 1200px;
                     opacity:0%;
                 }
                 100% {
@@ -324,22 +326,18 @@ z-index: 0;
             }
 @keyframes getboat {
                 0% {
-                    opacity:0%;
+                    left: -40%;
+			opacity:100%;
                 }
-                20% {
-                    left: 0px;
-			opacity:0%;
-                }
-                21% {
+                5% {
 			opacity:100%;
                 }
                 
-                79% {
-
+                59% {
+                    left: 100%;
                     opacity:100%;
                 }
-                80% {
-                    left: 1170px;
+                60% {
                     opacity:0%;
                 }
                 100% {
@@ -397,7 +395,9 @@ z-index: 0;
                 animation-duration: 30s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
-		z-index:1; }
+		z-index:1; 
+		bottom:550px;
+}
 		
 
            #s {
@@ -417,7 +417,7 @@ z-index: 0;
            #w {
 		position:absolute;
                 animation-name: getboat;
-                animation-duration: 40s;
+                animation-duration: 50s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 		z-index:1; }
