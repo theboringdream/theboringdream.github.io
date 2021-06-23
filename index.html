@@ -3,14 +3,25 @@
     <head>
       <meta charset="utf-8">
       <title>The Boring Dream</title>
+        <link href="https://allfont.es/allfont.css?fonts=lane-upper" rel="stylesheet" type="text/css" />
 <style>
 
 body{
-background: #183C55;
+  background: #183C55;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+h1{
+position:absolute;
+bottom: 66%;
+left:35%;
+  font-family: 'Lane - Upper', arial;
+font-weight: 100;
+color:rgb(255, 255, 255);
+font-size:300%;
+}
+
 
 #a{
 position:absolute;
@@ -114,6 +125,14 @@ bottom:310px;
 left:860px;
 z-index: 1;
 }
+#r:hover {
+  transition: 0.50s;
+  transform: rotate(360deg);
+} 
+#w:hover {
+  transition: 0.20s;
+  bottom:20px;
+} 
 #s{
 bottom:250px;
 z-index: 3;
@@ -303,8 +322,7 @@ bottom:550px;
 left:209px;
 z-index: 0;
 }
-
-@keyframes getbigger {
+@keyframes getplane {
                 0% {
                     left: -10%;
 			opacity:100%;
@@ -324,6 +342,15 @@ z-index: 0;
                     opacity:0%;
                 }
             }
+@keyframes planerotate :hover {
+                0% {
+                    width:0;
+                }
+                100% {
+                    width:100px;
+                }
+            }
+
 @keyframes getboat {
                 0% {
                     left: -40%;
@@ -391,7 +418,7 @@ z-index: 0;
 
            #r {
 		position:absolute;
-                animation-name: getbigger;
+                animation-name: getplane;
                 animation-duration: 30s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
@@ -425,6 +452,7 @@ z-index: 0;
 </style>
     </head>
     <body>
+<h1>THE BORING DREAM</h1>
 <img id="sea" src="city/png/rectangular-shape-outline.png" alt="1" width="100%" height="300px">
 <img id="seas" src="city/png/rectangular-shape-outline-1.png" alt="1" width="100%" height="150px">
 <img id="street" src="city/png/street.png" alt="1" width="450" height="80px">
@@ -474,5 +502,6 @@ z-index: 0;
 <img id="cloud5" src="city/png/cloud.png" alt="1" width="35px" height="35px">
 <img id="cloud6" src="city/png/cloud.png" alt="1" width="35px" height="20px">
 <img id="cloud7" src="city/png/cloud.png" alt="1" width="120px" height="40px">
+
     </body>
   </html>
