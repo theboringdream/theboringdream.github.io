@@ -13,13 +13,46 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+
 <style>
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+.container {
+  font-family: 'Roboto Mono', monospace;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+position:absolute;
+  top:45%;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 
 
-
-
-
-
+<style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
  *, *:before, *:after {
    box-sizing: border-box;
@@ -489,6 +522,15 @@ bottom:550px;
 left:209px;
 z-index: 0;
 } 
+
+
+
+.img-a:hover #a{
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+}
+
+
 @keyframes getplane {
                 0% {
                     left: -10%;
@@ -590,7 +632,7 @@ z-index: 0;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 		z-index:1; 
-		bottom:550px;
+		bottom:510px;
 }
 		
 
@@ -630,16 +672,17 @@ box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 white
  <div class="menu">
   <ul>
     <li>
-      <span onmouseenter="hoverEnter(0)"><i class="fas fa-hotel"></i></span></li>
+      <span onmouseenter="hoverEnter(0)"><i class="fas fa-home"></i></span></li>
     <li> <span onmouseenter="hoverEnter(1)"><i class="fas fa-campground"></i></span></li>
     <li> <span onmouseenter="hoverEnter(2)"><i class="fas fa-igloo"></i></span></li>
-    <li> <span onmouseenter="hoverEnter(3)"><i class="fas fa-home"></i></span></li>
+    <li> <span onmouseenter="hoverEnter(3)"><i class="fas fa-hotel"></i></span></li>
     <span class="goo-index" id="goo-index"></span>
   </ul>
 </div>
 <div class="content-wrapper">
   <div id="screen_0" class="screen visible">
     <h1>THE <u>BORING</u> DREAM</h1>
+
 <img id="sea" src="city/png/rectangular-shape-outline.png" alt="1" width="100%" height="300px">
 <img id="seas" src="city/png/rectangular-shape-outline-1.png" alt="1" width="100%" height="150px">
 <img id="street" src="city/png/street.png" alt="1" width="450" height="80px">
@@ -649,7 +692,7 @@ box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 white
 <img id="streets2" src="city/png/street2.png" alt="1" width="300" height="25px">
 <img id="streets3" src="city/png/street2.png" alt="1" width="300" height="6px">
 <img id="bridge" src="city/png/bridge.png" alt="1" width="45" height="15px">
-<img id="a" src="city/png/027-aparment.png" alt="1" width="132">
+<div class="img-a"><img id="a" src="city/png/027-aparment.png" alt="1" width="132"></div>
 <img id="b" src="city/png/013-hotel.png" alt="1" width="132">
 <img id="c" src="city/png/001-appartment.png" alt="1" width="120">
 <img id="d" src="city/png/003-block.png" alt="1" width="156">
@@ -667,10 +710,10 @@ box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 white
 <img id="p" src="city/png/019-modern house.png" alt="1" width="110px">
 <img id="q" src="city/png/022-skyscraper.png" alt="1" width="146px">
 <img id="r" src="city/png/plane.png" alt="1" width="80px">
-<img id="s" src="city/png/car.png" alt="1" width="60px">
+<div class="img-car"><img id="s" src="city/png/car.png" alt="1" width="60px"></div>
 <img id="t" src="city/png/017-lighthouse.png" alt="1" width="110px">
 <img id="u" src="city/png/005-cabin.png" alt="1" width="78">
-<img id="v" src="city/png/car2.png" alt="1" width="60px">
+<div class="img-car"><img id="v" src="city/png/car2.png" alt="1" width="60px"></div>
 <img id="w" src="city/png/sailboat.png" alt="1" width="100px">
 <img id="x" src="city/png/023-stilts.png" alt="1" width="100px">
 <img id="mountain" src="city/png/mountains.png" alt="1" width="200">
@@ -691,13 +734,114 @@ box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 white
 <img id="cloud7" src="city/png/cloud.png" alt="1" width="120px" height="40px">
   </div>
   <div id="screen_1" class="screen">
-    <h1>Nada por acá</h1>
+<body translate="no">
+  <div class="container">
+  <div class="text">and<span class="dud">/</span><span class="dud">&gt;</span><span class="dud">?</span>lking <span class="dud">&gt;</span>he <span class="dud">]</span>ath</div>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  
+      <script id="rendered-js">
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+class TextScramble {
+  constructor(el) {
+    this.el = el;
+    this.chars = '10!<>-_\\/[]{}—=+*^?#________';
+    this.update = this.update.bind(this);
+  }
+  setText(newText) {
+    const oldText = this.el.innerText;
+    const length = Math.max(oldText.length, newText.length);
+    const promise = new Promise(resolve => this.resolve = resolve);
+    this.queue = [];
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || '';
+      const to = newText[i] || '';
+      const start = Math.floor(Math.random() * 40);
+      const end = start + Math.floor(Math.random() * 40);
+      this.queue.push({ from, to, start, end });
+    }
+    cancelAnimationFrame(this.frameRequest);
+    this.frame = 0;
+    this.update();
+    return promise;
+  }
+  update() {
+    let output = '';
+    let complete = 0;
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i];
+      if (this.frame >= end) {
+        complete++;
+        output += to;
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar();
+          this.queue[i].char = char;
+        }
+        output += `<span class="dud">${char}</span>`;
+      } else {
+        output += from;
+      }
+    }
+    this.el.innerHTML = output;
+    if (complete === this.queue.length) {
+      this.resolve();
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update);
+      this.frame++;
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)];
+  }}
+
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+
+const phrases = [
+'',
+'',
+'',
+'Hello,',
+'be welcome',
+'to the best webpage',
+'that have ever existed.',
+'Because there is a difference',
+'between a good page',
+'&',
+'THE BORING DREAM',
+'THE BORING DREAM',
+'THE BORING DREAM',
+'THE BORING DREAM',
+'THE BORING DREAM'
+];
+
+
+const el = document.querySelector('.text');
+const fx = new TextScramble(el);
+
+let counter = 0;
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 800);
+  });
+  counter = (counter + 1) % phrases.length;
+};
+
+next();
+//# sourceURL=pen.js
+    </script>  
     
   </div>
  
   <div id="screen_2" class="screen">
- 
-    <h1>Tampoco por aquí</h1>  
+    <h1>No hay nada aca</h1>
   </div>
   <div id="screen_3" class="screen">
     
@@ -738,5 +882,7 @@ let hoverEnter =(index)=>{
 };
 
     </script>
+
+
     </body>
   </html>
