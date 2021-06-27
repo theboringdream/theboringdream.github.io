@@ -2,9 +2,10 @@
   <html>
 <html lang="en">
     <head>
+<link rel="shortcut icon" href="hardware/png/006-internet.png">
       <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <title>The Boring Dream</title>
@@ -13,6 +14,77 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+
+  
+<style>
+
+
+section.awSlider .carousel{
+  display:table;
+  z-index:2;
+  -moz-box-shadow: 0 0 4px #444;
+	-webkit-box-shadow: 0 0 4px #444;
+	box-shadow: 0 0 15px rgba(1,1,1,.5);
+}
+
+section.awSlider{
+  margin:150px auto;
+  padding:30px;
+  position: relative;
+  display:table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+section.awSlider:hover > img{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity:1;
+}
+
+section.awSlider img{
+height:281px;
+   pointer-events: none;
+}
+
+section.awSlider > img{
+  position:absolute;
+  top:30px;
+  z-index:1;
+  transition:all .3s;
+  filter: blur(1.8vw);
+  -webkit-filter: blur(2vw);
+  -moz-filter: blur(2vw); 
+  -o-filter: blur(2vw); 
+  -ms-filter: blur(2vw);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:.5;
+}
+</style>
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+
+
+
 <style>
 .colortext {
   position: absolute;
@@ -861,6 +933,72 @@ box-shadow: inset 0 0px 0 white, inset 0 -1.5px 0 white
   </div>
   <div id="screen_1" class="screen">
 <body translate="no">
+<section class="awSlider">
+  <div class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target=".carousel" data-slide-to="0" class=""></li>
+      <li data-target=".carousel" data-slide-to="1" class="active"></li>
+      <li data-target=".carousel" data-slide-to="2" class=""></li>
+      <li data-target=".carousel" data-slide-to="3" class=""></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active left">
+        <a href="#"><img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg"></a>
+        <div class="carousel-caption">ABOUT</div>
+      </div>
+      <div class="item next left">
+        <a href="#"><img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-101.jpg"></a>
+        <div class="carousel-caption">PORTAFOLIO</div>
+      </div>
+      <div class="item">
+        <a href="#"><img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-1051.jpg"></a>
+        <div class="carousel-caption">BLOG</div>
+      </div>
+      <div class="item">
+        <a href="#"><img src="shop.png" width="500px" ></a>
+        <div class="carousel-caption">CODE SHOP</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Geri</span>
+    </a>
+    <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">İleri</span>
+    </a>
+  </div>
+<img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg"></section>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script id="rendered-js">
+$('section.awSlider .carousel').carousel({
+  pause: "hover",
+  interval: 2000 });
+
+
+var startImage = $('section.awSlider .item.active > img').attr('src');
+$('section.awSlider').append('<img src="' + startImage + '">');
+
+$('section.awSlider .carousel').on('slid.bs.carousel', function () {
+  var bscn = $(this).find('.item.active > img').attr('src');
+  $('section.awSlider > img').attr('src', bscn);
+});
+
+
+/* 
+Philips ambilight tv
+Üzerine gleince duruyor slide
+*/
+//# sourceURL=pen.js
+    </script>
   <div class="container">
   <div class="text">and<span class="dud">/</span><span class="dud">&gt;</span><span class="dud">?</span>lking <span class="dud">&gt;</span>he <span class="dud">]</span>ath</div>
 </div>
